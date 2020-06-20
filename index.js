@@ -19,11 +19,11 @@ app.use(express.json());
 //     console.log('opened');
 //});
 
-const usersRouter = require('./routes/users');
-const registerRouter = require('./routes/register');
-const loginRouter = require('./routes/login');
+// const usersRouter = require('./routes/users');
+// const registerRouter = require('./routes/register');
+// const loginRouter = require('./routes/login');
 
-app.use('/register', registerRouter);
-app.use('/users', usersRouter);
-app.use('/login', loginRouter);
+// app.use('/register', registerRouter);
+// app.use('/users', usersRouter);
+// app.use('/login', loginRouter);
 
