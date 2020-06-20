@@ -19,10 +19,16 @@ app.use(express.json());
 //     console.log('opened');
 //});
 
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
+
 // const usersRouter = require('./routes/users');
 // const registerRouter = require('./routes/register');
 // const loginRouter = require('./routes/login');
-
+app.use('/register', require('./routes/users'));
 // app.use('/register', registerRouter);
 // app.use('/users', usersRouter);
 // app.use('/login', loginRouter);
