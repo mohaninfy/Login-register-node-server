@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 // const usersRouter = require('./routes/users');
 // const registerRouter = require('./routes/register');
 // const loginRouter = require('./routes/login');
-app.use('/register', require('./routes/users'));
+app.use('/users', require('./routes/users'));
 // app.use('/register', registerRouter);
 // app.use('/users', usersRouter);
 // app.use('/login', loginRouter);
